@@ -1,0 +1,31 @@
+:root {
+    /*Colors*/
+
+    --main-body-background: #111827;
+    --navbar-background: #030712;
+
+
+    --link-transition: #b91c1c;
+}
+
+
+
+body {
+
+    background-color: var(--main-body-background);
+}
+
+.navbar {
+    background-color: #030712;
+}
+
+.nav-link,
+.active {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #b91c1c;
+    transition-duration: 0.2s;
+    transition-property: color;
+}
