@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="images/movie_icon.svge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movie.io</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,7 +27,7 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Popular</a>
+              <a class="nav-link " href="popular.html">Popular</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Login</a>
@@ -45,8 +45,7 @@
     <div class="container-fluid main-body">
       <div class="row d-flex justify-content-around .no-gutters">
 
-        <span class="col-9 d-flex justify-content-center display-1 ">Movies.io</span>
-
+        <span class="col-9 d-flex justify-content-center display-1 movie text-white">Movie.io</span>
 
       </div>
       <div class="row justify-content-center search">
@@ -56,9 +55,9 @@
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Title</button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Title</a></li>
-                <li><a class="dropdown-item" href="#">Movie Star</a></li>
-                <li><a class="dropdown-item" href="#">Release Date</a></li>
+                <li><a class="dropdown-item title">Title</a></li>
+
+                <li><a class="dropdown-item release-date">Release Date</a></li>
               </ul>
               <input type="text" class="form-control search-bar" placeholder="Search for.." aria-label="search query"
                 aria-describedby="query button" autocomplete="off">
@@ -79,7 +78,7 @@
       </div>
 
       <div class="row">
-        <div class="container movie-display ps-5 pe-5 pt-3">
+        <div class="container-fluid movie-display ps-5 pe-5 pt-3">
           <div class="row movie-row">
 
           </div>

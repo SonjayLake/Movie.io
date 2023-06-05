@@ -3,15 +3,11 @@
 
     --main-body-background: #111827;
     --navbar-background: #030712;
-
-
     --link-transition: #b91c1c;
 }
 
 
-
 body {
-
     background-color: var(--main-body-background);
 }
 
@@ -22,6 +18,8 @@ body {
 .nav-link {
     color: white;
 }
+
+
 
 .nav-link:hover {
     color: #b91c1c;
@@ -34,32 +32,26 @@ hr {
     height: 5px;
 }
 
-
-/*Logo Icon*/
-
-.material-symbols-outlined {
-    font-size: 100px;
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 700,
-        'GRAD' 0,
-        'opsz' 48
-}
-
 .card {
     width: 18rem;
-
-
-
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 10px white;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+
+
 }
 
 .card-img-top {
     height: 20rem;
+}
+
+.card-body {
+    width: 100%;
 }
 
 .card-title {
@@ -68,4 +60,5 @@ hr {
 
 .card-text {
     font-style: italic;
+    width: 100%;
 }

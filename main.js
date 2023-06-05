@@ -1,12 +1,33 @@
-import './style.css'
+import './styles/style.css'
 
 
-const BASE_URL = "https://api.themoviedb.org/3/search/movie?query="
+let BASE_URL = "https://api.themoviedb.org/3/search/movie?query="
 const API_KEY = "9a8fe73926fa840ef3ba12ecb4efe819";
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
 
 let search = document.querySelector("button.search-button");
 let input = document.querySelector(".search-bar");
+let queryType = document.querySelector(".dropdown-toggle");
+
+let titleButton = document.querySelector(".title");
+let releaseButton = document.querySelector(".release-date");
+
+
+titleButton.addEventListener("click", () => {
+  BASE_URL = "https://api.themoviedb.org/3/search/movie?query=";
+  changeDropdown(titleButton);
+})
+
+releaseButton.addEventListener("click", () => {
+  BASE_URL = "https://api.themoviedb.org/3/discover/movie?primary_release_year=";
+  changeDropdown(releaseButton);
+})
+
+function changeDropdown(property) {
+  queryType.innerHTML = property.innerText;
+}
+
+
 
 search.addEventListener("click", async () => {
   let query = input.value.replace(" ", "%20");
@@ -14,7 +35,7 @@ search.addEventListener("click", async () => {
   getMovieDetails(query).then((res) => {
     return res.data.results;
   }).then((movies) => {
-    console.log(movies);
+    document.querySelector(".movie-row").innerHTML = "";
     for (let movie of movies) {
       generateMovieCard(movie);
     }
@@ -36,7 +57,7 @@ function generateMovieCard(movie) {
 
 
   let col = document.createElement("div");
-  col.classList.add("col-lg-3", "col-md-4", "col-sm-6", 'mb-3',);
+  col.classList.add("col-lg-3", "col-md-4", "col-sm-6", "mb-2");
 
   console.log("movie")
   //main card
