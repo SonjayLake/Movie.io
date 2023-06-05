@@ -19,8 +19,7 @@ body {
     background-color: #030712;
 }
 
-.nav-link,
-.active {
+.nav-link {
     color: white;
 }
 
@@ -49,4 +48,24 @@ hr {
 
 .card {
     width: 18rem;
+
+
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px white;
+}
+
+.card-img-top {
+    height: 20rem;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-style: italic;
 }

@@ -36,7 +36,7 @@ function generateMovieCard(movie) {
 
 
   let col = document.createElement("div");
-  col.classList.add("col-md-4", 'mb-3');
+  col.classList.add("col-lg-3", "col-md-4", "col-sm-6", 'mb-3',);
 
   console.log("movie")
   //main card
@@ -46,7 +46,12 @@ function generateMovieCard(movie) {
 
   //card image
   let img = document.createElement("img");
-  img.src = `${IMG_URL}${movie.poster_path}`;
+  if (movie.poster_path) {
+    img.src = `${IMG_URL}${movie.poster_path}`;
+  } else {
+    img.src = "images/no_poster.png";
+  }
+
   img.classList.add("card-img-top");
   card.appendChild(img); //adding image to card
 
@@ -65,6 +70,7 @@ function generateMovieCard(movie) {
 
   //card text
   let cardText = document.createElement("p");
+  cardText.classList.add("card-text");
   cardText.innerHTML = movie.overview.slice(0, 50) + "...";
   cardBody.appendChild(cardText); //adding text to body
 
