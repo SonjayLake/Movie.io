@@ -11,7 +11,6 @@ const config = {
     }
 }
 
-
 export function generateMovieCard(movie, movierow) {
 
 
@@ -64,7 +63,6 @@ export function generateMovieCard(movie, movierow) {
     document.querySelector(movierow).appendChild(col);
 
 }
-
 export async function getMovieDetails(query) {
     //getting image
     let resData = axios.get(`${BASE_URL}${query}&api_key=${API_KEY}`, config)
@@ -81,3 +79,5 @@ export async function getMovieDetails(query) {
         );
     return resData;
 }
+
+

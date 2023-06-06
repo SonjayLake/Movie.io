@@ -3,7 +3,7 @@ import { generateMovieCard } from './card.js'
 
 
 
-// document.onload = getPopular();
+document.onload = getPopular();
 
 async function getPopular() {
     console.log("hi");
