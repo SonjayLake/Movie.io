@@ -1,20 +1,24 @@
-import './styles/popular.css'
-
-const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
-const API_KEY = "9a8fe73926fa840ef3ba12ecb4efe819";
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
+const API_KEY = "9a8fe73926fa840ef3ba12ecb4efe819";
+let BASE_URL = "https://api.themoviedb.org/3/search/movie?query="
+// const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+
+const config = {
+    method: "GET",
+    headers: {
+        accept: "application/json",
+        Authorization: "Bearer " + API_KEY,
+    }
+}
 
 
-// document.onload = getPopular();
-
-
-function generateMovieCard(movie, movierow) {
+export function generateMovieCard(movie, movierow) {
 
 
     let col = document.createElement("div");
     col.classList.add("col-lg-3", "col-md-4", "col-sm-6", "mb-2");
 
-    console.log("movie")
+
     //main card
     let card = document.createElement("div");
     card.classList.add("card");
@@ -57,26 +61,23 @@ function generateMovieCard(movie, movierow) {
 
     //adding card to display;
     col.appendChild(card);
-    console.log(movierow);
     document.querySelector(movierow).appendChild(col);
 
 }
 
-async function getPopular() {
-    console.log("hi");
-    axios.get(`${POPULAR_URL}&api_key=${API_KEY}`)
+export async function getMovieDetails(query) {
+    //getting image
+    let resData = axios.get(`${BASE_URL}${query}&api_key=${API_KEY}`, config)
         .then((res) => {
-            console.log(res.data.results);
-            return res.data.results;
-        }).then((results) => {
-            document.querySelector(".movie-row-popular").innerHTML = "";
-            for (let i = 0; i < 8; i++) {
+            console.log("Successful Query");
+            return res;
 
-                generateMovieCard(results[i], ".movie-row-popular");
-            }
+
         })
+        .catch((e) => {
+            console.error("Failure, with error: " + e);
+        }
 
+        );
+    return resData;
 }
-
-
-

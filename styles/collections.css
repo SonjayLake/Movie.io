@@ -1,0 +1,72 @@
+:root {
+    /*Colors*/
+
+    --main-body-background: #111827;
+    --navbar-background: #030712;
+    --link-transition: #b91c1c;
+}
+
+
+body {
+    background-color: var(--main-body-background);
+}
+
+.navbar {
+    background-color: #030712;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+
+.nav-link:hover {
+    color: #b91c1c;
+    transition-duration: 0.2s;
+    transition-property: color;
+}
+
+hr {
+    background-color: white;
+    height: 5px;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px white;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+
+
+}
+
+.card-img-top {
+    height: 20rem;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-style: italic;
+    width: 100%;
+}
+
+.popular-header {
+    font-size: 1.25rem;
+}
+
+.popular-hr {
+    margin-top: 0;
+}
