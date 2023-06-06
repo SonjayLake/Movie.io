@@ -1,7 +1,7 @@
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
 const API_KEY = "9a8fe73926fa840ef3ba12ecb4efe819";
 let BASE_URL = "https://api.themoviedb.org/3/search/movie?query="
-// const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+
 
 const config = {
     method: "GET",
