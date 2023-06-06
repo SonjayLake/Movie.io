@@ -62,3 +62,11 @@ hr {
     font-style: italic;
     width: 100%;
 }
+
+.popular-header {
+    font-size: 1.25rem;
+}
+
+.popular-hr {
+    margin-top: 0;
+}
