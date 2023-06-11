@@ -2,7 +2,6 @@
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -23,15 +22,18 @@
 
 
 ## My process
-    I sketched out a rough draft of what I wanted the structure of the web app to look like once I got an idea. I knew I was going to use bootstrap for most of the webpage's components so I kept that in mind while designing.
+    I sketched out a rough draft of what I wanted the structure of the web app to look like once I got an idea.
+    I knew I was going to use bootstrap for most of the webpage's components so I kept that in mind while designing.
 
-    I started with the very basic HTML structure of the page, then used javascript and the TDMB API to get data on the page and complete the web app to its current version.
+    I started with the very basic HTML structure of the page, then used javascript and the
+    TDMB API to get data on the page and complete the web app to its current version.
 
 
 ### How to use:
 
-  This webapp is a dynamic page that uses Vite with vanilla JavaScript. In order to run it properly, download all of the files into one directory. Install vite (I used NPM, but anything works) and run the dev run command for your installation method. 
-  See vite docs for more information.
+  This webapp is a dynamic page that uses Vite with vanilla JavaScript. In order to run it properly, 
+  download all of the files into one directory. Install vite (I used NPM, but anything works) 
+  and run the dev run command for your installation method. See vite docs for more information.
 
 ### Built with
 
@@ -47,8 +49,9 @@
 
 ### What I learned
 
-    While the project is not close to its final version, I have learned a lot so far. Specifically, I learned the importance of file strucutre, functional programming, and breaking code files up increase readability and make debugging easier.
-
+    While the project is not close to its final version, I have learned a lot so far. 
+    Specifically, I learned the importance of file strucutre, functional programming, 
+    and breaking code files up increase readability and make debugging easier.
     This was also my first time using an API to flesh out a project, so I learned about 
 
 
@@ -115,8 +118,10 @@ async function getPopular() {
 
 ### Continued development
 
-This project is not fully completed. In the future, I plan to make the website allow the user to login and store their collection. The website also currently does not allow users to save their favorite movies or add them to a list in any way.
-Some future features include more filters for searching, reccomended movies, account creation + login, and more.
+This project is not fully completed. In the future, I plan to make the website allow the 
+user to login and store their collection. The website also currently does not allow users to save
+their favorite movies or add them to a list in any way. Some future features include more filters 
+for searching, reccomended movies, account creation + login, and more.
 
 ### Useful resources
 
