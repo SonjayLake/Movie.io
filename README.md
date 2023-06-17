@@ -32,8 +32,10 @@
 ### How to use:
 
   This webapp is a dynamic page that uses Vite with vanilla JavaScript. In order to run it properly, 
-  download all of the files into one directory. Install vite (I used NPM, but anything works) 
-  and run the dev run command for your installation method. See vite docs for more information.
+  download all of the files into one directory. After installing the files, make sure you have NPM 
+  installed. Navigate to the working directory for the project download and run "npm install" to 
+  download all of the dependencies. Once installed, once done, run "npm run dev" from the command
+  line and click on the link to open the web app in your browser.
 
 ### Built with
 
