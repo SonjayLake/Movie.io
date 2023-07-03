@@ -1,7 +1,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -13,8 +12,9 @@
 
 
 ## Overview
+MovieSearch is a static website built with Bootstrap and React, designed to provide users with a seamless movie searching experience. By leveraging API calls, users can easily explore and discover their favorite movies right from the website. The clean and intuitive user interface enhances the browsing experience, allowing users to quickly find information about movies, including ratings, cast, and release dates. MovieSearch is the go-to destination for movie enthusiasts seeking a convenient and enjoyable way to discover and stay up-to-date with the latest films.
 
-### Screenshot
+### Preview
 
 ![](images/movie-demo.png)
 
